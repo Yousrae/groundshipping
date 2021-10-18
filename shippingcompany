@@ -1,0 +1,34 @@
+
+#shipping company code 
+
+weight = 41.5
+cost_ground_premium = 125.00
+
+comment = "Ground Shipping"
+
+if weight <= 2: 
+  cost_ground = weight * 1.5 + 20
+elif weight <= 6:
+    cost_ground = weight * 3 + 20
+elif weight <= 10:
+    cost_ground = weight * 4 + 20
+elif weight > 10:
+    cost_ground = weight * 4.75 + 20
+else: "too much"
+
+print(cost_ground)
+print(cost_ground_premium)
+
+#Drone shipping 
+
+if weight <= 2: 
+  cost_ground = weight * 4.50 
+elif weight <= 6:
+    cost_ground = weight * 9 
+elif weight <= 10:
+    cost_ground = weight * 12 
+elif weight > 10:
+    cost_ground = weight * 14.25 
+else: "too much"
+
+print(cost_ground)
